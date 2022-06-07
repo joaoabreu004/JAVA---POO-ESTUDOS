@@ -7,6 +7,8 @@ public abstract class Pessoa {
 	private String dataUsuario; 
 	private LocalDate dtNascimento; 
 	
+	//LocalDate localDate6 = LocalDate.parse(dataDigitadaPeloUsuario, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+	
 	//Construtor
 	public Pessoa(String nome, String cpf, String dtUsuario){
 		this.nome = nome; 

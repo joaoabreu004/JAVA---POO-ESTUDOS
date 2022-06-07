@@ -107,10 +107,11 @@ public class Funcionario extends Pessoa {
 	//SOBRESCRITA
 	@Override
 	public String toString(){
+		getDtNascimento();
 		return "NOME: " + getNome() + "\r" 
 				+"CPF: " + getCpf() + "\r" 
 				+ "SALÁRIO: " + getSalario() + "\r" 
-				+ "DATA DE REGISTRO: " + getDtRegistro().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) + "\r" 
+ 				+ "DATA DE REGISTRO: " + getDtRegistro().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) + "\r" 
 				+ "STATUS: " + getStatus();  
   
 	}
